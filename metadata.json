@@ -1,0 +1,6 @@
+{
+  "name": "Replica Studio 3D",
+  "description": "Engenharia reversa, réplica de aplicativos, 11 skills do Replica, Claude Copilot com Grok e Gemini AI integrados, acesso à Internet, GitHub, gerador de APK e estúdio 3D GLB em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
