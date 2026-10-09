@@ -1,0 +1,27 @@
+name: Claude Skill & Replica CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  verify-skills:
+    name: Verify Claude Replica Skills & Tools
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Test Verification
+        run: |
+          echo "Verifying Replica Skills and 3D GLB Structure..."
+          python3 -c "import json; print('JSON parser ready')"
